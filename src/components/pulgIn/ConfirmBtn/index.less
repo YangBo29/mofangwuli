@@ -1,0 +1,50 @@
+/**
+ * author : yangbo
+ * date : 2020/01/16 10:55:10
+ * fileName: index.less
+ * description: 确认取消按钮
+**/
+
+@color: #fff;
+@cancel: #c1c1c1;
+@cancel_h: #b1b1b1;
+@ok: #3094d9;
+@ok_h: #2280c1;
+
+.confirm_container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+
+    .confirm_cancel,
+    .confirm_ok {
+        display: block;
+        width: 90px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        border-radius: 2px;
+        margin: 0 10px;
+        user-select: none;
+        cursor: pointer;
+        transition: background 0.2s;
+        font-size: 12px;
+    }
+
+    .confirm_cancel {
+        background: @cancel;
+
+        &:hover {
+            background: @cancel_h;
+        }
+    }
+
+    .confirm_ok {
+        background: @ok;
+
+        &:hover {
+            background: @ok_h;
+        }
+    }
+}

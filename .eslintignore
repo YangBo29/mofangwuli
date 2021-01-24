@@ -1,0 +1,3 @@
+# 忽略对public下的资源文件校验
+/public
+/src/components/HChart

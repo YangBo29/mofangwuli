@@ -1,0 +1,40 @@
+.sider_list {
+    width: 200px;
+    height: 100%;
+    background: @sider_bg;
+    user-select: none;
+
+    a {
+        color: @font_fff;
+        transition: color 0.2s;
+
+        &:hover {
+            color: rgb(93, 62, 94);
+        }
+    }
+
+    .dis_link {
+        color: #ddd;
+    }
+
+    .link_title,
+    .title_jump {
+        cursor: default;
+        height: 36px;
+        line-height: 36px;
+        font-size: 16px;
+        box-sizing: border-box;
+        padding: 0 15px;
+        background: #7a9a95;
+    }
+
+    .content_list {
+        li {
+            cursor: default;
+            height: 36px;
+            line-height: 36px;
+            font-size: 16px;
+            padding-left: 30px;
+        }
+    }
+}

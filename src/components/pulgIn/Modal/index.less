@@ -1,0 +1,100 @@
+/**
+ * author : yangbo
+ * date : 2020/01/15 11:41:53
+ * fileName: index.less
+ * description : 遮罩层
+**/
+
+@import '../../../assets/icons/icon.less';
+
+@bg: #fff;
+@header: #eee;
+@color: #191919;
+
+.modal_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 201;
+    // display: none;
+}
+
+.modal_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    background-color: @bg;
+    border-radius: 4px;
+    // overflow: hidden;
+
+    &.modal_content_enter {
+        animation: enter 0.2s both 0.2s;
+    }
+
+    &.modal_content_leave {
+        animation: leave 0.2s both;
+    }
+
+    .close_btn {
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        width: 13px;
+        height: 13px;
+        .icon_close;
+
+        &:hover {
+            .icon_close_h;
+        }
+    }
+
+    .modal_title {
+        width: 100%;
+        user-select: none;
+        color: @color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 44px;
+        background: @header;
+        font-size: 16px;
+        border-radius: 4px 4px 0 0;
+    }
+
+    .modal_body {
+        width: 100%;
+        height: auto;
+        min-width: 200px;
+        min-height: 100px;
+        // overflow: hidden;
+    }
+}
+
+@keyframes enter {
+    0% {
+        transform: translate(-50%, -70%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+@keyframes leave {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -70%);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,48 @@
+/**
+ * author : yangbo
+ * date : 2020/02/18 14:34:04
+ * fileName: index.less
+ * description : 气泡弹窗样式
+ **/
+
+:global {
+    .gqy-bubble {
+        position: fixed;
+        width: 100%;
+        z-index: 197;
+        display: flex;
+        justify-content: center;
+    }
+
+    .gqy-bubble-container {
+        min-width: 150px;
+        padding: 0 15px;
+        box-sizing: border-box;
+        white-space: nowrap;
+        height: 42px;
+        line-height: 42px;
+        background: rgba(208, 208, 208, 1);
+        border-radius: 2px;
+        color: #17191f;
+        text-align: center;
+        user-select: none;
+    }
+
+    .gqy-bubble-notice {
+        padding: 8px 0;
+        transition: transform 0.1s, opacity 0.1s;
+        transform-style: preserve-3d;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .gqy-move-up-enter {
+        transform: translateY(-30%);
+        opacity: 0;
+    }
+
+    .gqy-move-up-leave {
+        transform: translateY(-30%);
+        opacity: 0;
+    }
+}

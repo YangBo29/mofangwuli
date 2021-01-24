@@ -1,0 +1,129 @@
+html,
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+img,
+div,
+dl,
+dt,
+dd,
+pre,
+input,
+textarea,
+blockquote,
+th,
+td,
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.3;
+    font-family: 'Microsoft YaHei', '黑体', '宋体', 'Arial', sans-serif;
+    /* background: #F4F4F4; */
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+ul,
+ol,
+dl,
+li,
+dt,
+dd {
+    list-style-type: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+select,
+input,
+img,
+select {
+    vertical-align: middle;
+}
+
+input,
+button,
+select,
+textarea {
+    outline: none;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-left: 1px solid #252525;
+    border-right: 1px solid #252525;
+}
+
+::-webkit-scrollbar-track {
+    background: #252525;
+}
+
+.clearfix:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
