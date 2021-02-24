@@ -12,6 +12,180 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    background: linear-gradient(210deg, #b0b3a2 0%, #979a87 47%, #9d9f92 100%);
+}
+
+.modification {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background: transparent;
+    z-index: 3;
+
+    .teacher {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        // background: url(../assets/index/teacher.png) left top no-repeat;
+        // background-size: contain;
+
+        img {
+            display: block;
+            width: 98%;
+            height: auto;
+            pointer-events: auto;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        .tbg {
+            width: 100%;
+            z-index: 1;
+            top: 5px;
+        }
+    }
+
+    .student {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        // background: url(../assets/index/student.png) right bottom no-repeat;
+        // background-size: contain;
+
+        img {
+            display: block;
+            width: 98%;
+            height: auto;
+            pointer-events: auto;
+            cursor: pointer;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 2;
+        }
+
+        .sbg {
+            width: 100%;
+            z-index: 1;
+        }
+    }
+
+    .sub1,
+    .sub2,
+    .sub3,
+    .sub4,
+    .sub5,
+    .sub6,
+    .sub7,
+    .sub8,
+    .sub9 {
+        position: absolute;
+        z-index: 3;
+    }
+
+    .sub1 {
+        width: 66px;
+        height: 66px;
+        bottom: 67px;
+        left: 29.2%;
+        background: url('../assets/index/sub1.png') left top no-repeat;
+    }
+
+    .sub2 {
+        width: 259px;
+        height: 107px;
+        top: 0;
+        left: 32.8%;
+        background: url('../assets/index/sub2.png') left top no-repeat;
+    }
+
+    .sub3 {
+        width: 54px;
+        height: 54px;
+        top: 190px;
+        left: 59%;
+        background: url('../assets/index/sub3.png') left top no-repeat;
+    }
+
+    .sub4 {
+        width: 64px;
+        height: 64px;
+        top: 615px;
+        left: 63%;
+        background: url('../assets/index/sub4.png') left top no-repeat;
+    }
+
+    .sub5 {
+        width: 259px;
+        height: 69px;
+        bottom: 0;
+        right: 18.8%;
+        background: url('../assets/index/sub5.png') left top no-repeat;
+    }
+
+    .sub6 {
+        top: 133px;
+        right: 30.2%;
+
+        .sub_c1,
+        .sub_c2 {
+            position: absolute;
+        }
+
+        .sub_c1 {
+            width: 138px;
+            height: 136px;
+            top: 17px;
+            left: 0;
+            background: url('../assets/index/sub6.png') left top no-repeat;
+            background-size: contain;
+        }
+
+        .sub_c2 {
+            width: 144px;
+            height: 143px;
+            top: 0;
+            left: 31px;
+            background: rgba(255, 255, 255, 0.25);
+            border-radius: 50%;
+        }
+    }
+
+    .sub7 {
+        bottom: 378px;
+        left: 18.07%;
+
+        .sub_c1,
+        .sub_c2 {
+            position: absolute;
+        }
+
+        .sub_c1 {
+            width: 159px;
+            height: 157px;
+            top: 27px;
+            left: 54px;
+            background: url('../assets/index/sub7.png') left top no-repeat;
+            background-size: contain;
+        }
+
+        .sub_c2 {
+            width: 169px;
+            height: 168px;
+            top: 0;
+            left: 0;
+            background: rgba(255, 255, 255, 0.25);
+            border-radius: 50%;
+        }
+    }
 }
 
 .content_l,
@@ -33,7 +207,7 @@
     height: 100%;
     box-sizing: border-box;
     display: flex;
-    background: #5f09ca;
+    // background: #5f09ca;
     border-radius: 50%;
     transform: translateX(-50%);
     align-items: center;
@@ -59,7 +233,7 @@
     height: 100%;
     display: flex;
     box-sizing: border-box;
-    background: #faed00;
+    // background: #faed00;
     border-radius: 50%;
     transform: translateX(50%);
     align-items: center;
